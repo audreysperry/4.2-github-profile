@@ -1,0 +1,137 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+$font-family: Helvetica;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.wrapper {
+  padding: 30px 200px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.prof-pic {
+  border-radius: 10px;
+}
+
+
+.main-nav {
+  background-color: #24292E;
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    color: #c8c9c4;
+    list-style: none;
+    padding-left: 0px;
+  }
+}
+
+nav li {
+  padding: 10px 10px;
+  font-weight: bold;
+}
+
+.main-nav input{
+  margin-top: 2px;
+  // margin-left: 200px;
+  background-color: #383C3F;
+  border: none;
+  margin-right: 0px;
+  padding-right: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+.octicon {
+  filter: invert(100%);
+  margin-bottom: 2px;
+  min-width: 30px;
+}
+
+.left-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.right-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  .mini-prof-pic {
+    max-width: 20px;
+  }
+}
+.triangle {
+  font-size: 8px;
+  max-height: 8px;
+  align-self: center;
+
+}
+
+.plus {
+  font-size: 15px;
+  max-height: 20px;
+  margin: 0;
+}
+
+.nav-container {
+  padding: 0px 200px;
+}
+
+#user-profile-info {
+
+max-width: 200px;
+margin-right: 30px;
+
+}
+
+.account-info-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+
+
+  p {
+    color: #24292e;
+  }
+}
+
+.right-main {
+  min-width: 800px;
+}
+
+.repo-name {
+    color: #0366d6;
+    font-size: 20px;
+    font-weight: 600;
+
+}
