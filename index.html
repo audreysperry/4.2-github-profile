@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 2 github profile</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="left-nav">
+          <img class="octicon"src="images/svg/mark-github.svg" alt="">
+          <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search Github">
+            </div>
+          </form>
+
+          <ul>
+            <li>Pull requests</li>
+            <li>Issues</li>
+            <li>Marketplace</li>
+            <li>Gist</li>
+          </ul>
+        </div>
+        <div class="right-nav">
+          <div class="plus-arrow">
+            <img class="octicon plus" src="images/svg/plus.svg" alt="">
+            <img class="octicon triangle" src="images/svg/triangle-down.svg" alt="">
+          </div>
+
+          <div id="repo-photo">
+            <!-- HTML inserted here -->
+          </div>
+          <img class="octicon triangle" src="images/svg/triangle-down.svg" alt="">
+        </div>
+      </div>
+
+
+
+    </nav>
+    <div class="wrapper">
+
+        <div id="user-profile-info">
+          <!-- HTML inserted here -->
+        </div>
+
+
+        <div class="right-main">
+          <div class="inner-nav">
+            <nav class="account-info-nav">
+              <p>Overview</p>
+              <div class="respositories-tab">
+                <p>Repositories 21</p>
+                <p></p>
+              </div>
+              <div class="stars-tab">
+                <p>Stars 0</p>
+                <p></p>
+              </div>
+              <div class="followers-tab">
+                <p>followers 2</p>
+                <p></p>
+              </div>
+              <div class="following-tab">
+                <p>Following 4</p>
+                <p></p>
+              </div>
+            </nav>
+          </div>
+          <hr>
+          <div id="repo-info">
+            <!-- HTML inserted here -->
+          </div>
+        </div>
+        </div>
+
+    <script id="user-profile-template" type="text/x-handlebars-template">
+      <div>
+        <div class="profile-picture">
+          <a href="{{url}}">
+            <img class="prof-pic" src="{{avatar_url}}" alt="{{name}}">
+          </a>
+        </div>
+        <div class="user-name">
+          <h2>{{name}}</h2>
+          <h3>{{login}}</h3>
+          <p><a href="#"></a>Add a bio</p>
+        </div>
+        <hr>
+        <div class="user-contact">
+          <p class="location">{{location}}</p>
+          <p class="email">{{email}}</p>
+          <p class="website">{{blog}}</p>
+        </div>
+        <hr>
+      </div>
+    </script>
+
+    <script id="repo-template" type="text/x-handlebars-template">
+      <hr>
+      <a href="{{url}}">  <h1 class="repo-name">{{name}}</h1></a>
+      <p class="langauge">{{language}}</p>
+      <p class="last-updated">{{updated_at}}</p>
+    </script>
+
+    <script id="repo-photo-template"type="text/x-handlebars-template">
+      <img class="mini-prof-pic" src="{{avatar_url}}" alt="">
+    </script>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
