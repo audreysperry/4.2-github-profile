@@ -6,6 +6,12 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 $font-family: Helvetica;
+$HTML: #E34C26;
+$JavaScript: #f1E05A;
+$CSS: #563D7C;
+$Java: #b07219;
+$Shell: #89E051;
+$text-grey: #586069;
 
 *,
 *::before,
@@ -27,6 +33,7 @@ img {
 
 .prof-pic {
   border-radius: 10px;
+
 }
 
 
@@ -125,6 +132,11 @@ margin-right: 30px;
   }
 }
 
+#bio {
+  color: #6a737d;
+  margin-right: 10px;
+}
+
 .right-main {
   min-width: 800px;
 }
@@ -134,4 +146,94 @@ margin-right: 30px;
     font-size: 20px;
     font-weight: 600;
 
+}
+
+.lang-color {
+  content: "";
+  border-radius: 8px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+
+}
+
+#language{
+  font-size: 12px;
+  margin-right: 0px;
+  color: $text-grey;
+  margin-bottom: 1px;
+}
+
+.HTML {
+  background-color: $HTML;
+}
+
+.CSS {
+  background-color: $CSS;
+}
+
+.JavaScript {
+  background-color: $JavaScript;
+}
+
+.Shell {
+  background-color: $Shell;
+}
+
+.Java {
+  background-color: $Java;
+}
+
+#last-updated {
+  font-size: 12px;
+  margin-left: 10px;
+  color: $text-grey;
+  margin-bottom: 1px;
+}
+
+#login {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 0px;
+  color: #666;
+}
+
+#user-name {
+  margin-bottom: 0px;
+}
+
+.email, .website {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.hold-repo {
+  margin: 30px 0px;
+}
+
+.repo-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #269f42;
+    border-color: #269f42;
+    padding-left: 6px;
+  }
+
+.repo-search {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-left {
+  max-width: 400px;
+}
+
+.repo-button {
+  border: 1px solid rgba(27,31,35,0.2);
+  border-radius: 0.25em;
+  margin: 0px 10px;
 }

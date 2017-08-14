@@ -75,5 +75,8 @@
       ".hbs",
       "json"
     ]
+  },
+  "dependencies": {
+    "moment": "^2.18.1"
   }
 }
