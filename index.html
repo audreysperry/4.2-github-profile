@@ -1,115 +1,151 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>4 2 github profile</title>
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
 
-    <nav class="main-nav">
-      <div class="nav-container">
-        <div class="left-nav">
-          <img class="octicon"src="images/svg/mark-github.svg" alt="">
-          <form class="navbar-form navbar-left" role="search">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <title>4 2 github profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <nav class="main-nav">
+    <div class="nav-container">
+      <div class="left-nav">
+        <img class="octicon" src="images/svg/mark-github.svg" alt="">
+        <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search Github">
-            </div>
-          </form>
-
-          <ul>
-            <li>Pull requests</li>
-            <li>Issues</li>
-            <li>Marketplace</li>
-            <li>Gist</li>
-          </ul>
-        </div>
-        <div class="right-nav">
-          <div class="plus-arrow">
-            <img class="octicon plus" src="images/svg/plus.svg" alt="">
-            <img class="octicon triangle" src="images/svg/triangle-down.svg" alt="">
           </div>
+        </form>
 
-          <div id="repo-photo">
-            <!-- HTML inserted here -->
-          </div>
+        <ul>
+          <li>Pull requests</li>
+          <li>Issues</li>
+          <li>Marketplace</li>
+          <li>Gist</li>
+        </ul>
+      </div>
+      <div class="right-nav">
+        <div class="plus-arrow">
+          <img class="octicon plus" src="images/svg/plus.svg" alt="">
           <img class="octicon triangle" src="images/svg/triangle-down.svg" alt="">
         </div>
-      </div>
 
-
-
-    </nav>
-    <div class="wrapper">
-
-        <div id="user-profile-info">
+        <div id="repo-photo">
           <!-- HTML inserted here -->
         </div>
+        <img class="octicon triangle" src="images/svg/triangle-down.svg" alt="">
+      </div>
+    </div>
 
 
-        <div class="right-main">
-          <div class="inner-nav">
-            <nav class="account-info-nav">
-              <p>Overview</p>
-              <div class="respositories-tab">
-                <p>Repositories 21</p>
-                <p></p>
-              </div>
-              <div class="stars-tab">
-                <p>Stars 0</p>
-                <p></p>
-              </div>
-              <div class="followers-tab">
-                <p>followers 2</p>
-                <p></p>
-              </div>
-              <div class="following-tab">
-                <p>Following 4</p>
-                <p></p>
-              </div>
-            </nav>
-          </div>
-          <hr>
-          <div id="repo-info">
-            <!-- HTML inserted here -->
-          </div>
-        </div>
-        </div>
 
-    <script id="user-profile-template" type="text/x-handlebars-template">
-      <div>
-        <div class="profile-picture">
-          <a href="{{url}}">
+  </nav>
+  <div class="wrapper">
+
+    <div id="user-profile-info">
+      <!-- HTML inserted here -->
+    </div>
+
+
+    <div class="right-main">
+      <div class="inner-nav">
+        <!-- HTML appended here  -->
+      </div>
+      <hr>
+      <div class="repo-search">
+        <input class="form-control mr-sm-2 nav-left" type="text" placeholder="Search repositories...">
+         <div class="dropdown">
+           <button class="btn btn-secondary dropdown-toggle repo-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type: <b>All</b></button>
+           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+             <a class="dropdown-item" href="#">Public</a>
+             <a class="dropdown-item" href="#">Private</a>
+             <a class="dropdown-item" href="#">Sources</a>
+             <a class="dropdown-item" href="#">Forks</a>
+             <a class="dropdown-item" href="#">Mirrors</a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="btn btn-secondary dropdown-toggle repo-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Languages: <b>All</b></button>
+           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+             <a class="dropdown-item" href="#">CSS</a>
+             <a class="dropdown-item" href="#">HTML</a>
+             <a class="dropdown-item" href="#">JavaScript</a>
+           </div>
+         </div>
+         <button type="button" class="btn btn-success"><img class="octicon repo-icon" src="images/svg/repo.svg" alt="">New</button>
+      </div>
+
+
+      <div id="repo-info">
+        <!-- HTML inserted here -->
+      </div>
+    </div>
+  </div>
+  <script id="repo-nav-template" type="text/x-handlebars-template">
+  <nav class="account-info-nav">
+    <span><a href="https://github.com/audreysperry">Overview </a>/<span>
+    <div class="respositories-tab">
+      <a href="https://github.com/audreysperry?tab=repositories"><span>Repositories </span><span>{{public_repos}}</span></a>
+    </div>
+    <div class="stars-tab">
+      <a href="https://github.com/audreysperry?tab=stars"><span>Stars</span><span>{{public_gists}}</span></a>
+    </div>
+    <div class="followers-tab">
+      <a href="https://github.com/audreysperry?tab=followers"><span>followers</span><span>{{followers}}</span></a>
+    </div>
+    <div class="following-tab">
+      <a href="https://github.com/audreysperry?tab=following"><span>Following</span><span>{{following}}</span></a>
+
+    </div>
+  </nav>
+  </script>
+  <script id="user-profile-template" type="text/x-handlebars-template">
+    <div>
+      <div class="profile-picture">
+        <a href="{{url}}">
             <img class="prof-pic" src="{{avatar_url}}" alt="{{name}}">
           </a>
-        </div>
-        <div class="user-name">
-          <h2>{{name}}</h2>
-          <h3>{{login}}</h3>
-          <p><a href="#"></a>Add a bio</p>
-        </div>
-        <hr>
-        <div class="user-contact">
-          <p class="location">{{location}}</p>
-          <p class="email">{{email}}</p>
-          <p class="website">{{blog}}</p>
-        </div>
-        <hr>
       </div>
-    </script>
-
-    <script id="repo-template" type="text/x-handlebars-template">
+      <div class="user-name">
+        <h2 id="user-name">{{name}}</h2>
+        <h3 id="login">{{login}}</h3>
+        <p><a href="https://github.com/settings/profile?focus_bio=1">Add a bio</a></p>
+      </div>
       <hr>
-      <a href="{{url}}">  <h1 class="repo-name">{{name}}</h1></a>
-      <p class="langauge">{{language}}</p>
-      <p class="last-updated">{{updated_at}}</p>
-    </script>
+      <div class="user-contact">
+        <img id="bio" class="octicon1" src="images/svg/location.svg" alt="">
+        <span class="location">{{location}}</span>
+        </br>
+        <img id="bio" class="octicon1" src="images/svg/mail.svg" alt="">
+        <span class="email"><a href="#">audrey.sperry@gmail.com</a></span>
+        </br>
+        <img id="bio" class="octicon1" src="images/svg/link.svg" alt="">
+        <span class="website"><a href="{{blog}}">{{blog}}</a></span>
+      </div>
+      <hr>
+    </div>
+  </script>
 
-    <script id="repo-photo-template"type="text/x-handlebars-template">
-      <img class="mini-prof-pic" src="{{avatar_url}}" alt="">
-    </script>
+  <script id="repo-template" type="text/x-handlebars-template">
+    <hr>
+    <div class="hold-repo">
+      <a href="{{url}}">
+        <h1 class="repo-name">{{name}}</h1></a>
+      <div class="lang-color {{language}}"></div>
+      <span id="language" class="langauge">{{language}}</span>
+      <span id="last-updated" class="last-updated">Updated {{updated_at}}</span>
+    </div>
+  </script>
 
-    <script src="js/bundle.js"></script>
-  </body>
+  <script id="repo-photo-template" type="text/x-handlebars-template">
+    <img class="mini-prof-pic" src="{{avatar_url}}" alt="">
+  </script>
+
+  <script src="js/bundle.js"></script>
+</body>
+
 </html>
